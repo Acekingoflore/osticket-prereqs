@@ -113,7 +113,7 @@ Click “Enable or disable an extension”
 Enable: php_imap.dll
 Enable: php_intl.dll
 Enable: php_opcache.dll
-Refresh the osTicket site in your browser, observe the changes.
+Refresh the osTicket site in your browser, observe the changes. There will be two extension still disabled but they are not needed.
 
 
 </p>
