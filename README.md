@@ -79,7 +79,43 @@ Then you should be at this image above so far.
 <img src="https://i.imgur.com/G35mRip.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+We are now going to open IIS as an Admin:
+First, search in the search box on the bottom left IIS 
+Then right click the app and hit run as administrator then give it a moment to open.
+
+
+
+
+Now we are going to Register PHP from within IIS (PHP Manager -> C:\PHP\php-cgi.exe) from the home screen you should see PHP manager open it. Then click register a new PHP version a little window will pop up and what you want to do is click the little 3 dots on the right in the window box. Now go to the windows (C:) drive and open the PHP folder. Double click php-cgi it should be the last option on the bottom then just hit ok.
+
+Reload IIS (Open IIS, Stop and Start the server) when back on the home screen of the IIS, on the right where it says Manage Server hit stop and then start.
+
+Install osTicket v1.15.8
+Now  Minimize IIS and 
+From the “osTicket-Installation-Files” folder, extract all from “osTicket-v1.15.8.zip” and if you notice it will make a copy of the file just let the file extract. now open up the duplicate osTicket-v1.15.8.zip. Open another file explorer and go to the windows(C:) drive. Then Click on inetpub, then click wwwroot  and then drag the upload folder into the wwwroot” then a box will appear, just hit continue.
+Within wwwroot”, Rename “upload” to “osTicket”.
+
+Reload IIS (Open IIS, Stop and Start the server) Like we did before.
+
+Now go back to the IIS Home Screen, On the left, you should see something that says sites, hit the drop down arrow -> Default drop down arrow-> click osTicket 
+On the right, click “Browse *:80”
+Now the osTicket website should load up.
+
+Minimize IIS for now.
+
+We are now going to see that some extensions are X out on the website but we will be fixing a few of those soon enough.
+
+Note that some extensions are not enabled.
+Now
+Go back to IIS, sites drop down arrow -> Default drop down arrow -> click on osTicket
+Double-click PHP Manager
+Click “Enable or disable an extension”
+Enable: php_imap.dll
+Enable: php_intl.dll
+Enable: php_opcache.dll
+Refresh the osTicket site in your browser, observe the changes.
+
+
 </p>
 <br />
 
