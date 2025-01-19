@@ -152,7 +152,7 @@ Now go to file explorer and from the desktop go to the “osTicket-Installation-
 <p>
 <img src="https://i.imgur.com/mSkFsUG.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 
-Then fill out the rest of that osTicket browser Database Setting portion with the credentials below 
+Then fill out the rest of that osTicket browser Database Setting portion with the credentials 
 MySQL Database: osTicket,
 MySQL Username: root,
 MySQL Password: root,
