@@ -121,9 +121,47 @@ Refresh the osTicket site in your browser, observe the changes. There will be tw
 <img src="https://i.imgur.com/u7yZ7ti.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <p>
 Refresh the osTicket site in your browser, observe the changes. There will be two extension still disabled but they are not needed.
-<img src="https://i.imgur.com/oYk4qWm.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+
+  
+Rename: ost-config.php 
+Go to file explorer, 
+Then Window (C:) Drive, 
+Then double click Inetpub,
+Then click on wwroot,
+Double Click osTicket folder,
+Double click include,
+Scroll down until you find ost-sampleconfig.php,
+Right click and then rename it to ost-config.php. Must Be Perfectly Spelled exactly the same!!!! 
+
+
+Assign Permissions: ost-config.php
+Then right click the newly renamed file and click properties, then go to security, Then advance at the bottom. Disable all inheritance to strip all current permission away. Click Remove all inheritance permissions from this object. Then click add in the bottom left, Then click Select a principle(This is not good to do in a real life job situation but for the sake of this project we will!!). Then type in everyone and check the name on the right side of the small box window and click ok,then check full control hit ok.
+
+Continue Setting up osTicket in the browser (click Continue)
+Name Helpdesk
+Default email (receives email from customers)
+
+
+
+After filling out System Setting and Admin User
+
+Now go to file explorer and from the desktop go to the “osTicket-Installation-Files” folder, and then double click the“osTicket-Installation-Files” folder again install HeidiSQL. This is an app that allows us to make a connection to our database so we can configure things in there. Now install HeidiSQL make sure the launch HeidiSQL option is checked. A window will pop up, click skip. Now from Hedid we will setup a new database for osTicket to use. Click new in the bottom left corner and on the right, the user will be root and the password will be root back from when we setup the SQL server. Now click open. On the left side you will see something that says unnamed right click it, then click create new and then database. Then name it exactly this “osTicket” Then hit ok
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<img src="https://i.imgur.com/mSkFsUG.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+Then fill out the rest of that osTicket browser Database Setting portion with the credentials below 
+MySQL Database: osTicket,
+MySQL Username: root,
+MySQL Password: root,
+Click “Install Now!”.
+
+Congratulations, hopefully it is installed with no errors!
+Browse to your help desk login page: http://localhost/osTicket/scp/login.php
+<img src="https://i.imgur.com/oYk4qWm.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+
 </p>
 <br />
