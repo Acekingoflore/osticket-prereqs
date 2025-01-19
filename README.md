@@ -118,8 +118,9 @@ Refresh the osTicket site in your browser, observe the changes. There will be tw
 
 </p>
 <br />
-
+<img src="https://i.imgur.com/u7yZ7ti.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <p>
+Refresh the osTicket site in your browser, observe the changes. There will be two extension still disabled but they are not needed.
 <img src="https://i.imgur.com/oYk4qWm.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
